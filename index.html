@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div id="calculator">
+        <div id=top-frame>
+            <div id="info">
+                <div>KASIO</div> 
+                <div>fx-82ms</div>
+            </div>
+            <h1 id="title">C-A.L.C.</h1>
+            <p id="display"></p>
+        </div>
+        <table id="buttons" >
+            <tr>
+                <td><button class="btn-func" onclick="empty()">AC</button></td>
+                <td><button class="btn-char" onclick="insertChar('+')">+</button></td>
+                <td><button class="btn-char" onclick="insertChar('/')">/</button></td>
+                <td><button class="btn-char" onclick="insertChar('*')">*</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn-char" onclick="insertChar('9')">9</button></td>
+                <td><button class="btn-char" onclick="insertChar('8')">8</button></td>
+                <td><button class="btn-char" onclick="insertChar('7')">7</button></td>
+                <td><button class="btn-char" onclick="insertChar('6')">6</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn-char" onclick="insertChar('5')">5</button></td>
+                <td><button class="btn-char" onclick="insertChar('4')">4</button></td>
+                <td><button class="btn-char" onclick="insertChar('3')">3</button></td>
+                <td><button class="btn-char" onclick="insertChar('.')">.</button></td>
+            </tr>
+            <tr>
+                <td><button class="btn-char" onclick="insertChar('2')">2</button></td>
+                <td><button class="btn-char" onclick="insertChar('1')">1</button></td>
+                <td><button class="btn-char" onclick="insertChar('0')">0</button></td>
+                <td><button class="btn-func" onclick="operetions()">=</button></td>
+            </tr>
+
+        </table>
+    </div>
+    
+</body>
+</html>

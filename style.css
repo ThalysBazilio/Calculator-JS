@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Calc'; 
+    src: url(./Fonte/Calculator.ttf) format(truetype);
+}
+:root{
+    --color-gray: rgb(85, 96, 114);
+    --color-gray2:rgb(54, 63, 75);
+    --color-gray3:rgb(38, 44, 53);
+    --color-green: rgb(144, 161, 110);
+    --color-display: rgb(187,212,150);
+    --color-white:rgb(185, 187, 205);
+    --color-dark: #272727;
+    --color-pink: rgb(208, 101, 120);
+    --color-pink2: rgb(157, 76, 90);
+}
+body{
+    /* background-image:var(--gradient-gray); */
+    background-color: var(--color-green);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator{
+    background-color: var(--color-gray);
+    width: 25%;
+    height: 50%;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap:1.5rem;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.4);
+}
+#buttons{
+    width: 98%;
+    height: 99%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+    
+}
+
+
+.btn-char,.btn-func{
+    width: 5rem;
+    height: 4.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 4px;
+}
+
+
+.btn-char{
+    color: var(--color-white);
+    background-color: var(--color-gray2);
+}
+.btn-char:hover{
+    background-color: var(--color-gray3);
+    width: 4.9rem;
+    height: 4.3rem;
+
+}
+
+.btn-func{
+    background-color: var(--color-pink);
+}
+.btn-func:hover{
+    background-color: var(--color-pink2);
+    width: 4.9rem;
+    height: 4.3rem;
+}
+#display{
+    background-color:var(--color-display);
+    width: 25rem;
+    height: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right:5px;
+    margin-top: 0px;
+    border-radius: 0.5rem;
+    margin-bottom: 0px;
+    font-size: 45px;
+    font-family: 'calc';
+    font-weight: 550;
+
+}
+#top-frame{
+    width: 100%;
+    height: 20rem;
+    background-color: var(--color-gray2);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#title{
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom:8px;
+    color: var(--color-pink)
+}
+
+#info{
+    color: var(--color-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    font-size: 15px;
+
+    
+}
